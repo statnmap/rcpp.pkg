@@ -48,4 +48,12 @@ file.remove("NAMESPACE")
 usethis::use_r("RcppRoxygen")
 #> Update doc and DESCRIPTION
 attachment::att_amend_desc()
+#> Test
+rcpp.pkg::rcpp_hello_world()
+
+# Add pipe operator and update doc and DESCRIPTION
+usethis::use_pipe()
+attachment::att_amend_desc()
+#> Test
+rcpp.pkg::rcpp_hello_world()
 
