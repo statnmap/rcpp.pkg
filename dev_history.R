@@ -53,7 +53,11 @@ rcpp.pkg::rcpp_hello_world()
 
 # Add pipe operator and update doc and DESCRIPTION
 usethis::use_pipe()
-attachment::att_amend_desc()
+# attachment::att_amend_desc()
+usethis::use_package("magrittr")
+usethis::use_package("Rcpp")
+#> Check
+devtools::check()
 #> Test
 rcpp.pkg::rcpp_hello_world()
 
