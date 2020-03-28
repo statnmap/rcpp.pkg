@@ -31,8 +31,8 @@ usethis::use_readme_md()
 # Configure your git
 usethis::use_git_config(
   scope = "project",
-  user.name = "Your Name",
-  user.email = "you@example.com"
+  user.name = "Sébastien Rochette",
+  user.email = "sebastienrochettefr@gmail.com"
 )
 
 # library is protected by a .gitignore inside renv/ directory
@@ -40,4 +40,12 @@ usethis::use_git()
 #> commit
 
 # Send to github
+
+# use roxygen
+usethis::use_roxygen_md()
+file.remove("NAMESPACE")
+#> Add roxygen skeleton for Rcpp
+usethis::use_r("RcppRoxygen")
+#> Update doc and DESCRIPTION
+attachment::att_amend_desc()
 
